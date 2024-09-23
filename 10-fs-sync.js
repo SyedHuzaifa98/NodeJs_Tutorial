@@ -14,7 +14,7 @@
 // allowing you to call these functions directly.
 
 const { readFileSync, writeFileSync} = require('fs')
-
+console.log("Start")
 const first = readFileSync('./content/first.txt','utf-8') // default one is utf-8
 const second = readFileSync('./content/second.txt','utf-8') // if we not provide utf-8 then it return raw buffer data
 
@@ -26,6 +26,6 @@ const second = readFileSync('./content/second.txt','utf-8') // if we not provide
 writeFileSync("./content/result-sync.txt",`Hello This is result file and First content: ${first}
     Second content: ${second}`,{flag:'a'})
 
-
+console.log("End")
 // **********    Sync (end)  **********
 
